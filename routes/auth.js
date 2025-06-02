@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 
-// Register User
+// Register User..
 router.post('/register', async (req, res) => {
     try {
         const { name, email, phone } = req.body;
@@ -18,7 +18,7 @@ router.post('/register', async (req, res) => {
     }
 });
 
-// Verify OTP
+// Verify OTP..
 router.post('/verify-otp', async (req, res) => {
     try {
         const { phone, otp } = req.body;
